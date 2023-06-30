@@ -46,7 +46,7 @@ void printTree(Node *root){              //Função para imprimir nossa árvore 
     }
 }
 
-void treeFree(Node *root){      //função para desalocar a memoria alocana quando inserimos um nó
+void treeFree(Node *root){     //função para desalocar a memoria alocana quando inserimos um nó
     if(root != NULL){
         treeFree(root->left);
         treeFree(root->right);
